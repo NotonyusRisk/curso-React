@@ -1,15 +1,21 @@
-import propTypes from 'prop-types'
+// import propTypes from 'prop-types'
 
-export function Button({text, name}){
-    return <button>
-        {text} - {name}
+export function Button() {
+  return (
+    <button
+      onClick={function () {
+        console.log("Hola mundo");
+      }}
+    >
+      Click me
     </button>
+  );
 }
 
-Button.propTypes = {
-    text: propTypes.string.isRequired
-}
+// Button.propTypes = {
+//     text: propTypes.string.isRequired
+// }
 
-Button.defaultProps = {
-    name: 'some user'
-}
+// Button.defaultProps = {
+//     name: 'some user'
+// }
